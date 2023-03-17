@@ -1,6 +1,7 @@
 {
   "name": "pngquant",
   "displayName": "pngquant",
+  "publisher": "fwon",
   "description": "",
   "version": "1.0.0",
   "repository": "https://github.com/fwon/vscode-extension-pngquant",
