@@ -4,6 +4,7 @@
   "publisher": "fwon",
   "description": "",
   "version": "1.0.0",
+  "icon": "logo.png",
   "repository": "https://github.com/fwon/vscode-extension-pngquant",
   "engines": {
     "vscode": "^1.76.0"
