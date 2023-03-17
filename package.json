@@ -1,0 +1,50 @@
+{
+  "name": "pngquant",
+  "displayName": "pngquant",
+  "description": "",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "compress_img",
+        "title": "Compress image"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "compress_img",
+          "group": "1_modification",
+          "when": "resourceExtname == .png"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.76.0",
+    "@vscode/test-electron": "^2.2.3",
+    "eslint": "^8.34.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "node-pngquant-native": "^2.2.0"
+  }
+}
